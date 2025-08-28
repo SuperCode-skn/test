@@ -8,6 +8,9 @@
 </head>
 <body>
   <div id="chat-container">
+    <div id="chat-header">
+      <h1>AI Chat</h1>
+    </div>
     <div id="chat-box">
       <div class="message assistant">
         <p>你好！有什么可以帮你的吗？</p>
@@ -15,7 +18,11 @@
     </div>
     <form id="chat-form">
       <input type="text" id="user-input" placeholder="输入你的消息..." autocomplete="off" required>
-      <button type="submit">发送</button>
+      <button type="submit" aria-label="发送">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.47826 2.33684L22.1856 11.2335C22.6983 11.4899 23 11.9601 23 12.5C23 13.0399 22.6983 13.5101 22.1856 13.7665L3.47826 22.6632C2.94399 22.9321 2.30174 22.9181 1.77881 22.6284C1.25588 22.3387 0.999999 21.8089 1 21.2468V3.75321C0.999999 3.19113 1.25588 2.66133 1.77881 2.37162C2.30174 2.08192 2.94399 2.06788 3.47826 2.33684ZM4 12.5L18.5 12.5L4 12.5ZM4 5.5L4 9.5L16.5 12.5L4 15.5L4 19.5L20 12.5L4 5.5Z" fill="white"/>
+        </svg>
+      </button>
     </form>
   </div>
   <script src="script.js"></script>
